@@ -1,11 +1,9 @@
 <template>
-  <div class="pizza"></div>
+  <div>
+    <img src="../public/dough.png" alt="" />
+  </div>
 </template>
 
 <script setup></script>
 
-<style scoped>
-.pizza {
-  background-image: url(https://media.istockphoto.com/id/1498390252/vector/seamless-pattern-of-brick-wall.jpg?s=612x612&w=0&k=20&c=XB0iZ1s5eZCavavl4Nbs_ogfQn6KbncPm1O4uUMoHj8=);
-}
-</style>
+<style scoped></style>
