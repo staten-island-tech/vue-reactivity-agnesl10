@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import ThePizza from '@/views/ThePizza.vue'
 import IngredientsList from '@/views/IngredientsList.vue'
 
@@ -12,7 +11,7 @@ const router = createRouter({
       component: ThePizza,
     },
     {
-      path: '/',
+      path: '/ingredients',
       name: 'side',
       component: IngredientsList,
     },
