@@ -1,21 +1,21 @@
 <template>
   <div class="base">
     <img src="/dough.png" alt="" />
+    <IngredientsList class="ingredients" />
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import IngredientsList from '@/components/IngredientsList.vue'
+</script>
 
 <style scoped>
 img {
-  height: 30%;
-  width: 30%;
-  align-items: center;
-}
-.base {
-  background-image: url(/cuttingboard.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  align-items: center;
+  height: 35%;
+  width: 35%;
+  margin: 35px;
+  margin-top: 80px;
+  margin-left: 10%;
+  text-align: left;
 }
 </style>
