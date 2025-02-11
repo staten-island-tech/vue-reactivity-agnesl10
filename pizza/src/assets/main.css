@@ -6,11 +6,13 @@ html
 .header {
     text-align: center;
     background-color: #f0dfcc;
-    color: #553a24;
-    font-size: 1.5rem;
+    color: #7a583c;
+    font-size: 1.8rem;
     font-family: "Darumadrop One", serif;
     font-weight: 400;
     font-style: normal;
+    border-color: transparent;
+    border-radius: 15px;
 }
 @media screen and (max-width: 1100px) {
     .container {

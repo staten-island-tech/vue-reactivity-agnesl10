@@ -3,7 +3,7 @@
     <h1>{{ topping.name }}</h1>
     <img :src="topping.icon" alt="" />
     <h5>${{ topping.price }}</h5>
-    <button type="button">Add to Pizza</button>
+    <slot></slot>
   </div>
 </template>
 
@@ -20,24 +20,27 @@ function toPizza(topping) {}
   border: solid 5px #cead87;
   border-radius: 15px;
   margin: 5%;
-  width: 20%;
+  width: 15%;
   height: 60%;
   align-items: center;
   text-align: center;
-  padding: 1.5%;
-  font-family: "DM Sans", serif;
+  padding: 0.8%;
+  font-family: 'DM Sans', serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 30px;
 }
 img {
-  height: 30%;
-  width: 30%
+  height: 35%;
+  width: 35%;
 }
-button {
-  background-color: #dcc1a1;
-  color: #4a3926;
-  border-color: transparent;
-  border-radius: 10px;
+h5 {
+  font-size: 20px;
 }
 </style>
