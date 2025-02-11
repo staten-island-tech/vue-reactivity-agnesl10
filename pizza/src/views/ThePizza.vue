@@ -11,8 +11,8 @@ import IngredientsList from '@/components/IngredientsList.vue'
 
 <style scoped>
 img {
-  height: 35%;
-  width: 35%;
+  height: 30%;
+  width: 30%;
   margin: 35px;
   margin-top: 80px;
   margin-left: 10%;
