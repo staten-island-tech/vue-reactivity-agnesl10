@@ -10,6 +10,12 @@
 defineProps({
   topping: Object,
 })
+function toPizza(topping) {}
 </script>
 
-<style scoped></style>
+<style scoped>
+div {
+  background-color: #806e58;
+  border: solid #806e58;
+}
+</style>
