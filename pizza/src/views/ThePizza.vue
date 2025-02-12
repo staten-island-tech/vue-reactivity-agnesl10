@@ -1,7 +1,7 @@
 <template>
   <div class="base">
     <img src="/dough.png" alt="" />
-    <IngredientsList class="ingredients" />
+    <IngredientsList />
   </div>
 </template>
 

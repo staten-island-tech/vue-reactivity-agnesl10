@@ -11,7 +11,6 @@
 defineProps({
   topping: Object,
 })
-function toPizza(topping) {}
 </script>
 
 <style scoped>
