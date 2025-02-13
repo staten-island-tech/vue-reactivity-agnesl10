@@ -9,6 +9,7 @@
 <script setup>
 import CardProps from '@/components/CardProps.vue'
 import { toppings } from '@/arrays/toppings'
+import { onPizza } from '@/arrays/pizza'
 function add(topping) {
   onPizza.push(topping)
   console.log(topping)
