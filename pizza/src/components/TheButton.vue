@@ -1,6 +1,7 @@
 <template>
   <div>
     <button @click="add(topping)">Add to Pizza</button>
+    <button @click="remove(topping)">Remove from Pizza</button>
   </div>
 </template>
 
@@ -8,6 +9,11 @@
 import { onPizza } from '@/arrays/pizza'
 function add(topping) {
   onPizza.push(topping)
+  console.log(topping)
+  console.log(onPizza)
+}
+function remove(topping) {
+  onPizza.splice(topping)
   console.log(topping)
   console.log(onPizza)
 }
