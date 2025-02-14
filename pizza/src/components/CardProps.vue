@@ -33,13 +33,14 @@ defineProps({
   width: 150px;
 }
 h1 {
-  font-size: 30px;
+  font-size: 25px;
 }
 img {
-  height: 35%;
-  width: 35%;
+  height: 40%;
+  width: 40%;
 }
 h5 {
   font-size: 20px;
+  margin: 0 auto;
 }
 </style>
