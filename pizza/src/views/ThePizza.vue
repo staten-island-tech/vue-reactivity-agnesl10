@@ -21,22 +21,18 @@ import IngredientsList from '@/components/IngredientsList.vue'
   text-align: left;
 }
 .container {
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /* Distributes items evenly across rows */
   gap: 1rem; /* Adds space between items */
-  width: 25%;
+  width: 50%;
   margin: 1rem auto;
   padding: 1.3%;
   flex-direction: row;
   border: 0;
 }
-
 .base {
   display: flex;
   flex-direction: row;
 }
-
-
-
 </style>
