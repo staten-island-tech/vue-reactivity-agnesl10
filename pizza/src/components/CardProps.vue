@@ -18,12 +18,11 @@ defineProps({
   background-color: #f0dfcc;
   border: solid 5px #cead87;
   border-radius: 15px;
-  margin: 5%;
-  width: 15%;
-  height: 60%;
   align-items: center;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  padding: 1.3%;
   text-align: center;
-  padding: 0.8%;
   font-family: 'DM Sans', serif;
   font-optical-sizing: auto;
   font-weight: 500;

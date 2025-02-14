@@ -1,6 +1,6 @@
 <template>
   <div class="base">
-    <img src="/dough.png" alt="" />
+    <img class="dough" src="/dough.png" alt="" />
     <div class="container">
       <IngredientsList />
     </div>
@@ -12,12 +12,31 @@ import IngredientsList from '@/components/IngredientsList.vue'
 </script>
 
 <style scoped>
-img {
-  height: 30%;
+.dough {
+  height: 15%;
   width: 30%;
   margin: 35px;
   margin-top: 80px;
-  margin-left: 10%;
+  margin-left: 8%;
   text-align: left;
 }
+.container {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distributes items evenly across rows */
+  gap: 1rem; /* Adds space between items */
+  width: 25%;
+  margin: 1rem auto;
+  padding: 1.3%;
+  flex-direction: row;
+  border: 0;
+}
+
+.base {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
 </style>
