@@ -30,7 +30,6 @@ defineProps({
   justify-content: space-around;
   display: flex;
   flex-direction: column;
-  width: 150px;
 }
 h1 {
   font-size: 25px;

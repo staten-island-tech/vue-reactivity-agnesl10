@@ -1,5 +1,19 @@
 const toppings = [
   {
+    name: 'sauce',
+    icon: '/sauceicon.png',
+    image: '/sauce.png',
+    topic: 'base',
+    price: 50,
+  },
+  {
+    name: 'cheese',
+    icon: '/cheeseicon.png',
+    image: '/cheese.png',
+    topic: 'dairy',
+    price: 50,
+  },
+  {
     name: 'basil',
     icon: '/basilicon.png',
     image: '/basil.png',
@@ -12,20 +26,6 @@ const toppings = [
     image: '/bellpepper.png',
     topic: 'vegetable',
     price: 100,
-  },
-  {
-    name: 'cheese',
-    icon: '/cheeseicon.png',
-    image: '/cheese.png',
-    topic: 'dairy',
-    price: 50,
-  },
-  {
-    name: 'sauce',
-    icon: '/sauceicon.png',
-    image: '/sauce.png',
-    topic: 'base',
-    price: 50,
   },
   {
     name: 'eggplant',

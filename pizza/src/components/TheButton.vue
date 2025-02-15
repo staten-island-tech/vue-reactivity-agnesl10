@@ -13,9 +13,14 @@ function add(topping) {
   console.log(onPizza)
 }
 function remove(topping) {
-  onPizza.splice(topping)
-  console.log(topping)
-  console.log(onPizza)
+  if (onPizza.includes(topping)){
+    onPizza.splice(topping)
+    console.log(topping)
+    console.log(onPizza)
+  }
+  else{
+    alert("You haven't added that to your pizza yet !!")
+  }
 }
 </script>
 

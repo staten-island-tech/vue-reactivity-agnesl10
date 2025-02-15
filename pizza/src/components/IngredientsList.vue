@@ -17,7 +17,7 @@ import TheButton from './TheButton.vue'
   margin: 1.3%;
 }
 .card {
-  width: 50%;
+  width: 150px;
 }
 .container {
   display: grid;
