@@ -1,18 +1,17 @@
 html
 {
-    background-image: url(https://media.istockphoto.com/id/1498390252/vector/seamless-pattern-of-brick-wall.jpg?s=612x612&w=0&k=20&c=XB0iZ1s5eZCavavl4Nbs_ogfQn6KbncPm1O4uUMoHj8=);
-}
+background-color: rgb(218, 197, 185);}
 
 .header {
     text-align: center;
-    background-color: #ca7c6c;
-    color: #37230a;
-    font-size: 1.8rem;
-    font-family: "Darumadrop One", serif;
-    font-weight: 400;
+    color: #4a3524;
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
     font-style: normal;
     border-color: transparent;
     border-radius: 15px;
+    font-size: 35px;
 }
 @media screen and (max-width: 1100px) {
     .container {

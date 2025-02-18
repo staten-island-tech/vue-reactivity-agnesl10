@@ -1,6 +1,9 @@
 <template>
   <div class="base">
     <img class="dough" src="/dough.png" alt="" />
+    <div class="chosenToppings">
+
+    </div>
     <div>
       <IngredientsList />
     </div>
@@ -17,7 +20,7 @@ import IngredientsList from '@/components/IngredientsList.vue'
   width: 30%;
   margin: 35px;
   margin-top: 80px;
-  margin-left: 8%;
+  margin-left: 10%;
   text-align: left;
 }
 

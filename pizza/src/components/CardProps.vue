@@ -21,6 +21,7 @@ defineProps({
   align-items: center;
   margin-top: 1.5%;
   margin-bottom: 1.5%;
+  margin: 0 auto;
   padding: 1.3%;
   text-align: center;
   font-family: 'DM Sans', serif;
@@ -33,6 +34,7 @@ defineProps({
 }
 h1 {
   font-size: 25px;
+  color: #4a3524;
 }
 img {
   height: 40%;
@@ -41,5 +43,6 @@ img {
 h5 {
   font-size: 20px;
   margin: 0 auto;
+  color: #4a3524;
 }
 </style>

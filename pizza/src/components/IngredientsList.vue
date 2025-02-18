@@ -20,9 +20,9 @@ import TheButton from './TheButton.vue'
   width: 150px;
 }
 .container {
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Distributes items evenly across rows */
+  justify-content: space-around; /* Distributes items evenly across rows */
   gap: 1rem; /* Adds space between items */
   width: 50%;
   margin: 1rem auto;
@@ -31,3 +31,4 @@ import TheButton from './TheButton.vue'
   border: 0;
 }
 </style>
+ 

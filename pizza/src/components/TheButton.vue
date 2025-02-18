@@ -14,7 +14,7 @@ function add(topping) {
 }
 function remove(topping) {
   if (onPizza.includes(topping)){
-    onPizza.splice(topping)
+    onPizza.splice(topping, 1) // one tells me that it is removing one not just clearing the array
     console.log(topping)
     console.log(onPizza)
   }
