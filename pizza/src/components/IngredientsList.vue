@@ -5,7 +5,7 @@
       <button class="remove" @click="remove(topping)">Remove from Pizza</button>
     </CardProps>
     <div class="current">
-      <img class="newtoppings" v-for="topping in onPizza" :key="topping.name" :src="topping.image" :alt="topping.name">
+      <img class="newtoppings" v-for="(topping, index) in onPizza" :key="topping.name" :class="topping.name" :src="topping.image" :alt="topping.name" :style="{ zIndex:index }">
     </div>
   </div>
 </template>
@@ -13,8 +13,8 @@
 <script setup>
 import CardProps from '@/components/CardProps.vue'
 import { toppings } from '@/arrays/toppings'
-
 import { onPizza } from '@/arrays/pizza'
+
 function add(topping) {
   onPizza.push(topping)
   console.log(topping)
@@ -75,11 +75,31 @@ function remove(topping) {
   font-style: normal;
   margin: 5px;
 }
-.newtoppings{
-  width: 80%;
-  position: relative;
-  right: 625px;
-  bottom: 1550px;
+.current {
+  position: relative; /* Ensures absolute positioning works for children */
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+}
+.newtoppings:not(.sauce):not(.cheese){
+  position: absolute;
+  width: 90%; 
+  right: 695px;
+  bottom: 1530px;
+  transition: all 0.3s ease-in-out; 
+}
+.sauce{
+  width: 110%;
+  position: absolute;
+  right: 650px;
+  bottom: 1475px;
+  transition: all 0.3s ease-in-out;
+}
+.cheese{
+  width: 110%;
+  position: absolute;
+  right: 650px;
+  bottom: 1475px;
+  transition: all 0.3s ease-in-out;
 }
 </style>
  

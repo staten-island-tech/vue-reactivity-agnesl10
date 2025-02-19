@@ -7,11 +7,15 @@
     <div>
       <IngredientsList />
     </div>
+    <div>
+      <ThePrice />
+    </div>
   </div>
 </template>
 
 <script setup>
 import IngredientsList from '@/components/IngredientsList.vue'
+import ThePrice from '@/components/ThePrice.vue'
 </script>
 
 <style scoped>

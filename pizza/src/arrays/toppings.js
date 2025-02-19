@@ -14,6 +14,20 @@ const toppings = [
     price: 50,
   },
   {
+    name: 'pepperoni',
+    icon: '/pepicon.png',
+    image: '/pepperoni.png',
+    topic: 'meat',
+    price: 100,
+  },
+  {
+    name: 'sausage',
+    icon: '/sausageicon.png',
+    image: '/sausage.png',
+    topic: 'meat',
+    price: 100,
+  },
+  {
     name: 'basil',
     icon: '/basilicon.png',
     image: '/basil.png',
@@ -37,7 +51,7 @@ const toppings = [
   {
     name: 'mushroom',
     icon: '/mushroomicon.png',
-    image: '/mushrrom.png',
+    image: '/mushroom.png',
     topic: 'fungus',
     price: 100,
   },
@@ -53,20 +67,6 @@ const toppings = [
     icon: '/onionicon.png',
     image: '/onion.png',
     topic: 'vegetable',
-    price: 100,
-  },
-  {
-    name: 'pepperoni',
-    icon: '/pepicon.png',
-    image: '/pepperoni.png',
-    topic: 'meat',
-    price: 100,
-  },
-  {
-    name: 'sausage',
-    icon: '/sausageicon.png',
-    image: '/sausage.png',
-    topic: 'meat',
     price: 100,
   },
   {
