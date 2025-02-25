@@ -88,25 +88,40 @@ function remove(topping) {
   width: 100%;
   height: 300px; /* Adjust the height as needed */
 }
-.newtoppings:not(.sauce):not(.cheese) {
+.newtoppings:not(.sauce):not(.cheese):not(.pepperoni):not(.sausage) {
   position: absolute;
   width: 90%;
-  right: 695px;
-  bottom: 1530px;
+  right: 805px;
+  bottom: 1500px;
   transition: all 0.3s ease-in-out;
 }
 .sauce {
-  width: 110%;
+  width: 100%;
   position: absolute;
-  right: 650px;
-  bottom: 1475px;
+  right: 795px;
+  bottom: 1445px;
   transition: all 0.3s ease-in-out;
 }
 .cheese {
-  width: 110%;
+  width: 105%;
   position: absolute;
-  right: 650px;
-  bottom: 1475px;
+  right: 775px;
+  bottom: 1445px;
+  transition: all 0.3s ease-in-out;
+}
+.pepperoni {
+  width: 80%;
+  position: absolute;
+  right: 820px;
+  bottom: 1495px;
+  transition: all 0.3s ease-in-out;
+}
+.sausage {
+  width: 115%;
+  transform: rotate(27deg);
+  position: absolute;
+  right: 740px;
+  bottom: 1485px;
   transition: all 0.3s ease-in-out;
 }
 </style>

@@ -1,9 +1,7 @@
 <template>
   <div>
-    <h2 v-for="topping in onPizza.ingredients" :key="topping.name">
-      total price of pizza: {{ topping.name }}
-    </h2>
-    <h3>{{ onPizza.total }}</h3>
+    <h2 v-for="topping in onPizza.ingredients" :key="topping.name">Added {{ topping.name }}</h2>
+    <h3>total price of pizza:{{ onPizza.total }}</h3>
   </div>
 </template>
 
