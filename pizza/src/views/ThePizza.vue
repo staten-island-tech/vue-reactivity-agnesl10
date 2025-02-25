@@ -1,9 +1,7 @@
 <template>
   <div class="base">
     <img class="dough" src="/dough.png" alt="" />
-    <div class="chosenToppings">
-
-    </div>
+    <div class="chosenToppings"></div>
     <div>
       <IngredientsList />
     </div>
@@ -28,12 +26,8 @@ import ThePrice from '@/components/ThePrice.vue'
   text-align: left;
 }
 
-
 .base {
   display: flex;
   flex-direction: row;
 }
-
-
-
 </style>

@@ -5,7 +5,15 @@
       <button class="remove" @click="remove(topping)">Remove from Pizza</button>
     </CardProps>
     <div class="current">
-      <img class="newtoppings" v-for="(topping, index) in onPizza" :key="topping.name" :class="topping.name" :src="topping.image" :alt="topping.name" :style="{ zIndex:index }">
+      <img
+        class="newtoppings"
+        v-for="(topping, index) in onPizza.ingredients"
+        :key="topping.name"
+        :class="topping.name"
+        :src="topping.image"
+        :alt="topping.name"
+        :style="{ zIndex: index }"
+      />
     </div>
   </div>
 </template>
@@ -16,18 +24,18 @@ import { toppings } from '@/arrays/toppings'
 import { onPizza } from '@/arrays/pizza'
 
 function add(topping) {
-  onPizza.push(topping)
+  onPizza.ingredients.push(topping)
+  onPizza.total += topping.price
   console.log(topping)
   console.log(onPizza)
 }
 function remove(topping) {
-  if (onPizza.includes(topping)){
-    const index = onPizza.indexOf(topping)
-    onPizza.splice(index, 1) // one tells me that it is removing one not just clearing the array
+  if (onPizza.ingredients.includes(topping)) {
+    const index = onPizza.ingredients.indexOf(topping)
+    onPizza.ingredients.splice(index, 1) // one tells me that it is removing one not just clearing the array
     console.log(topping)
     console.log(onPizza)
-  }
-  else{
+  } else {
     alert("You haven't added that to your pizza yet !!")
   }
 }
@@ -80,21 +88,21 @@ function remove(topping) {
   width: 100%;
   height: 300px; /* Adjust the height as needed */
 }
-.newtoppings:not(.sauce):not(.cheese){
+.newtoppings:not(.sauce):not(.cheese) {
   position: absolute;
-  width: 90%; 
+  width: 90%;
   right: 695px;
   bottom: 1530px;
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
 }
-.sauce{
+.sauce {
   width: 110%;
   position: absolute;
   right: 650px;
   bottom: 1475px;
   transition: all 0.3s ease-in-out;
 }
-.cheese{
+.cheese {
   width: 110%;
   position: absolute;
   right: 650px;
@@ -102,4 +110,3 @@ function remove(topping) {
   transition: all 0.3s ease-in-out;
 }
 </style>
- 
