@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <h2 v-for="topping in onPizza.ingredients" :key="topping.name">Added {{ topping.name }}</h2>
-    <h3>total price of pizza:{{ onPizza.total }}</h3>
+  <div class="price">
+    <h3>total price of pizza: ${{ onPizza.total }}.00</h3>
   </div>
 </template>
 
@@ -26,7 +25,7 @@ h3 {
   border: 10px #af9480 solid;
   background-color: #f0dfcc;
   border-radius: 13px;
-  margin-left: 20%;
-  padding: 0.5;
+  margin-left: 30%;
+  padding: 1;
 }
 </style>

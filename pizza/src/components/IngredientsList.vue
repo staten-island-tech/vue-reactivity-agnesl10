@@ -22,9 +22,6 @@
 import CardProps from '@/components/CardProps.vue'
 import { toppings } from '@/arrays/toppings'
 import { onPizza } from '@/arrays/pizza'
-import { ref } from 'vue'
-const recentlyAdded = ref('')
-const recentlyRemoved = ref('')
 
 function add(topping) {
   onPizza.ingredients.push(topping)
@@ -92,39 +89,39 @@ function remove(topping) {
   height: 300px; /* Adjust the height as needed */
 }
 .newtoppings:not(.sauce):not(.cheese):not(.pepperoni):not(.sausage) {
+  width: 37%;
   position: absolute;
-  width: 90%;
-  right: 805px;
-  bottom: 1500px;
+  right: 1185px;
+  bottom: 735px;
   transition: all 0.3s ease-in-out;
 }
 .sauce {
-  width: 100%;
+  width: 45%;
   position: absolute;
-  right: 795px;
-  bottom: 1445px;
+  right: 1135px;
+  bottom: 675px;
   transition: all 0.3s ease-in-out;
 }
 .cheese {
-  width: 105%;
+  width: 45%;
   position: absolute;
-  right: 775px;
-  bottom: 1445px;
+  right: 1135px;
+  bottom: 675px;
   transition: all 0.3s ease-in-out;
 }
 .pepperoni {
-  width: 80%;
   position: absolute;
-  right: 820px;
-  bottom: 1495px;
+  width: 32%;
+  right: 1195px;
+  bottom: 755px;
   transition: all 0.3s ease-in-out;
 }
 .sausage {
-  width: 115%;
-  transform: rotate(27deg);
+  width: 48%;
+  transform: rotate(32deg);
   position: absolute;
-  right: 740px;
-  bottom: 1485px;
+  right: 1095px;
+  bottom: 745px;
   transition: all 0.3s ease-in-out;
 }
 </style>
