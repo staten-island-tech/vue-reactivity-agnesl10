@@ -16,12 +16,12 @@ defineProps({
 <style scoped>
 .card {
   background-color: #f0dfcc;
-  border: solid 5px #cead87;
+  border: solid 5px #af9480;
   border-radius: 15px;
   align-items: center;
   margin-top: 1.5%;
   margin-bottom: 1.5%;
-  margin: 0 auto;
+  margin: 1%;
   padding: 1.3%;
   text-align: center;
   font-family: 'DM Sans', serif;

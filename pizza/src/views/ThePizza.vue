@@ -1,11 +1,11 @@
 <template>
-  <div class="base">
-    <img class="dough" src="/dough.png" alt="" />
-    <div>
-      <IngredientsList />
-    </div>
-    <div>
+  <div class="setup">
+    <div class="base">
+      <img class="dough" src="/dough.png" alt="" />
       <ThePrice />
+    </div>
+    <div class="ingredients">
+      <IngredientsList />
     </div>
   </div>
 </template>
@@ -17,16 +17,22 @@ import ThePrice from '@/components/ThePrice.vue'
 
 <style scoped>
 .dough {
-  height: 15%;
-  width: 30%;
+  width: 120%;
   margin: 35px;
   margin-top: 80px;
-  margin-left: 10%;
+  margin-left: 15%;
   text-align: left;
 }
-
-.base {
+.setup{
   display: flex;
   flex-direction: row;
+}
+.base {
+  display: flex;
+  flex-direction: column;
+}
+.ingredients{
+  margin-right: 0 auto;
+  border: 0;
 }
 </style>
